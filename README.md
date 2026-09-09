@@ -10,7 +10,8 @@
 | Felipe Soares | 824156311
 | Thiago Ferreira | 824156179 
 | Gabriel Fornicola Amorim | 824148690 
-| Matheus Tognon| 000000 
+| Matheus Tognon| 824141731 
+| Gabriel Almeida| 825126760 
 
 ---
 
