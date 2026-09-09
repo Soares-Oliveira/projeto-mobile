@@ -183,9 +183,6 @@ projeto-mobile/
 
 O protótipo é feito apenas com **HTML e CSS** (sem dependências).
 
-1. Abra o arquivo [`index.html`](./index.html) diretamente no navegador **ou**
-2. Sirva a pasta com um servidor local, por exemplo:
-
 ```bash
 python -m http.server 8000
 ```
