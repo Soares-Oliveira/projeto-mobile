@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tela_03 — Destaques</title>
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+  <main class="screen">
+
+    <header class="header">
+      <a href="tela_01_home.html" class="header__back">‹</a>
+      <span class="header__title">Destaques</span>
+      <div class="header__actions"><span class="header__icon">🔍</span></div>
+    </header>
+
+    <div class="screen__body">
+
+      <p class="text-muted">Conteúdos com maior evidência na plataforma.</p>
+
+      <!-- Reuso do card em contexto de destaque -->
+      <div class="card-grid">
+        <article class="card card--featured">
+          <div class="card__image placeholder">Imagem</div>
+          <div class="card__body">
+            <span class="card__category">IA</span>
+            <h3 class="card__title">Modelos generativos no dia a dia</h3>
+            <p class="card__excerpt">O que mudou na rotina de quem cria conteúdo.</p>
+            <div class="card__meta"><span>Redação</span><span class="card__date">11 mar</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__image placeholder">Imagem</div>
+          <div class="card__body">
+            <span class="card__category">Front-end</span>
+            <h3 class="card__title">CSS moderno que você deveria usar</h3>
+            <div class="card__meta"><span>Carla M.</span><span class="card__date">09 mar</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__image placeholder">Imagem</div>
+          <div class="card__body">
+            <span class="card__category">Design</span>
+            <h3 class="card__title">Acessibilidade em telas mobile</h3>
+            <div class="card__meta"><span>Diego P.</span><span class="card__date">06 mar</span></div>
+          </div>
+        </article>
+      </div>
+
+    </div>
+
+    <nav class="nav">
+      <a href="tela_01_home.html" class="nav__item"><span class="nav__icon">⌂</span><span class="nav__label">Início</span></a>
+      <a href="tela_03_destaques.html" class="nav__item nav__item--active"><span class="nav__icon">★</span><span class="nav__label">Destaques</span></a>
+      <a href="tela_11_busca.html" class="nav__item"><span class="nav__icon">🔍</span><span class="nav__label">Buscar</span></a>
+      <a href="tela_12_login.html" class="nav__item"><span class="nav__icon">◔</span><span class="nav__label">Entrar</span></a>
+    </nav>
+
+  </main>
+</body>
+</html>

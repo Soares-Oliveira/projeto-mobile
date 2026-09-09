@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tela_09 — Admin: Fila de Revisão</title>
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+  <main class="screen">
+
+    <header class="header header--admin">
+      <a href="tela_05_admin_categorias.html" class="header__back" style="color:#fff">‹</a>
+      <span class="header__title">Admin · Fila de revisão</span>
+    </header>
+
+    <nav class="nav nav--side">
+      <a href="tela_05_admin_categorias.html" class="nav__item">Categorias</a>
+      <a href="tela_06_criar_post.html" class="nav__item">Criar post</a>
+      <a href="tela_07_admin_escolhas.html" class="nav__item">Escolhas</a>
+      <a href="tela_08_admin_usuarios.html" class="nav__item">Usuários</a>
+      <a href="tela_09_fila_revisao.html" class="nav__item nav__item--active">Revisão</a>
+      <a href="tela_10_fila_comentarios.html" class="nav__item">Comentários</a>
+    </nav>
+
+    <div class="screen__body">
+
+      <div class="alert alert--warning">
+        <div class="alert__title">3 postagens aguardando avaliação</div>
+        Aprove ou reprove os conteúdos enviados para revisão.
+      </div>
+
+      <!-- Fila de revisão: postagem + autoria + estado + decisão -->
+      <ul class="list">
+        <li class="list__item">
+          <div class="list__item-header">
+            <span class="list__item-title">Guia de festivais 2026</span>
+            <span class="badge badge--review">Em análise</span>
+          </div>
+          <span class="list__item-meta">por Bruno L. · enviado há 2h</span>
+          <div class="list__item-actions">
+            <button class="button button--primary button--small">Aprovar</button>
+            <button class="button button--danger button--small">Reprovar</button>
+          </div>
+        </li>
+        <li class="list__item">
+          <div class="list__item-header">
+            <span class="list__item-title">Introdução ao design system</span>
+            <span class="badge badge--review">Em análise</span>
+          </div>
+          <span class="list__item-meta">por Carla M. · enviado há 5h</span>
+          <div class="list__item-actions">
+            <button class="button button--primary button--small">Aprovar</button>
+            <button class="button button--danger button--small">Reprovar</button>
+          </div>
+        </li>
+        <li class="list__item">
+          <div class="list__item-header">
+            <span class="list__item-title">Rotina de estudos front-end</span>
+            <span class="badge badge--review">Em análise</span>
+          </div>
+          <span class="list__item-meta">por Diego P. · enviado ontem</span>
+          <div class="list__item-actions">
+            <button class="button button--primary button--small">Aprovar</button>
+            <button class="button button--danger button--small">Reprovar</button>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+  </main>
+</body>
+</html>

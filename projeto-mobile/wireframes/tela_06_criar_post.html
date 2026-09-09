@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tela_06 — Admin: Criar Post</title>
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+  <main class="screen">
+
+    <header class="header header--admin">
+      <a href="tela_05_admin_categorias.html" class="header__back" style="color:#fff">‹</a>
+      <span class="header__title">Admin · Criar post</span>
+    </header>
+
+    <nav class="nav nav--side">
+      <a href="tela_05_admin_categorias.html" class="nav__item">Categorias</a>
+      <a href="tela_06_criar_post.html" class="nav__item nav__item--active">Criar post</a>
+      <a href="tela_07_admin_escolhas.html" class="nav__item">Escolhas</a>
+      <a href="tela_08_admin_usuarios.html" class="nav__item">Usuários</a>
+      <a href="tela_09_fila_revisao.html" class="nav__item">Revisão</a>
+      <a href="tela_10_fila_comentarios.html" class="nav__item">Comentários</a>
+    </nav>
+
+    <div class="screen__body">
+
+      <!-- Bloco: form (contexto criação de conteúdo) -->
+      <form class="form">
+        <div class="form__group">
+          <label class="form__label" for="titulo">Título</label>
+          <input class="form__input" id="titulo" type="text" placeholder="Título da postagem">
+        </div>
+
+        <div class="form__group">
+          <label class="form__label" for="conteudo">Conteúdo</label>
+          <textarea class="form__textarea" id="conteudo" placeholder="Escreva o conteúdo..."></textarea>
+        </div>
+
+        <div class="form__group">
+          <label class="form__label" for="categoria">Categoria</label>
+          <select class="form__select" id="categoria">
+            <option>Techno</option>
+            <option>Design</option>
+            <option>Carreira</option>
+          </select>
+        </div>
+
+        <div class="form__group">
+          <label class="form__label">Tags</label>
+          <div class="tag-list">
+            <span class="tag tag--selected">react</span>
+            <span class="tag tag--selected">css</span>
+            <span class="tag tag--outline">+ adicionar</span>
+          </div>
+        </div>
+
+        <div class="form__group">
+          <label class="form__label">Imagem de capa</label>
+          <div class="placeholder" style="height:110px;">Enviar imagem</div>
+        </div>
+
+        <!-- Ações com diferentes permissões (variações de button) -->
+        <div class="form__actions">
+          <button class="button button--primary button--block">Publicar</button>
+          <button class="button button--secondary button--block">Enviar para revisão</button>
+          <button class="button button--ghost button--block">Salvar como rascunho</button>
+        </div>
+      </form>
+
+    </div>
+  </main>
+</body>
+</html>

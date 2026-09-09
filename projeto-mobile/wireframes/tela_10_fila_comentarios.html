@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tela_10 — Admin: Fila de Comentários</title>
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+  <main class="screen">
+
+    <header class="header header--admin">
+      <a href="tela_05_admin_categorias.html" class="header__back" style="color:#fff">‹</a>
+      <span class="header__title">Admin · Comentários</span>
+    </header>
+
+    <nav class="nav nav--side">
+      <a href="tela_05_admin_categorias.html" class="nav__item">Categorias</a>
+      <a href="tela_06_criar_post.html" class="nav__item">Criar post</a>
+      <a href="tela_07_admin_escolhas.html" class="nav__item">Escolhas</a>
+      <a href="tela_08_admin_usuarios.html" class="nav__item">Usuários</a>
+      <a href="tela_09_fila_revisao.html" class="nav__item">Revisão</a>
+      <a href="tela_10_fila_comentarios.html" class="nav__item nav__item--active">Comentários</a>
+    </nav>
+
+    <div class="screen__body">
+
+      <div class="alert alert--warning">
+        <div class="alert__title">Moderação de comentários</div>
+        Comentários pendentes aguardam aprovação antes de ficarem visíveis.
+      </div>
+
+      <!-- Fila de comentários: mesma lógica da fila de revisão -->
+      <ul class="list">
+        <li class="list__item">
+          <div class="list__item-header">
+            <span class="list__item-title">Ana Ribeiro</span>
+            <span class="badge badge--pending">Pendente</span>
+          </div>
+          <span class="list__item-meta">em "CSS moderno que você deveria usar"</span>
+          <p class="text-muted">"Excelente resumo, ajudou muito no meu projeto!"</p>
+          <div class="list__item-actions">
+            <button class="button button--primary button--small">Aprovar</button>
+            <button class="button button--danger button--small">Reprovar</button>
+          </div>
+        </li>
+        <li class="list__item">
+          <div class="list__item-header">
+            <span class="list__item-title">Bruno Lima</span>
+            <span class="badge badge--pending">Pendente</span>
+          </div>
+          <span class="list__item-meta">em "Modelos generativos no dia a dia"</span>
+          <p class="text-muted">"Discordo de alguns pontos, mas bom texto."</p>
+          <div class="list__item-actions">
+            <button class="button button--primary button--small">Aprovar</button>
+            <button class="button button--danger button--small">Reprovar</button>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+  </main>
+</body>
+</html>

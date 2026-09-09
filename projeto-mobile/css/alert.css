@@ -1,0 +1,26 @@
+/* ==========================================================================
+   alert.css  —  Bloco: alert (Responsabilidade: mensagens e avisos)
+   --------------------------------------------------------------------------
+   Mensagens de feedback ao usuário (confirmações, informações, atenção).
+   Variações: --info, --success, --warning.
+   ========================================================================== */
+
+/* Bloco */
+.alert {
+  border: 1px solid var(--cor-borda);
+  border-left-width: 4px;
+  border-radius: var(--raio-sm);
+  padding: var(--esp-3);
+  font-size: var(--texto-sm);
+  background: var(--cor-superficie);
+}
+
+.alert__title {
+  font-weight: 700;
+  margin-bottom: var(--esp-1);
+}
+
+/* Modificadores */
+.alert--info { border-left-color: var(--cor-acento); }
+.alert--success { border-left-color: var(--cor-publicado); }
+.alert--warning { border-left-color: var(--cor-analise); }

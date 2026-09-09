@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tela_14 — Perfil</title>
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+  <main class="screen">
+
+    <header class="header">
+      <a href="tela_01_home.html" class="header__back">‹</a>
+      <span class="header__title">Meu perfil</span>
+      <div class="header__actions"><span class="header__icon">⚙</span></div>
+    </header>
+
+    <div class="screen__body">
+
+      <!-- Cabeçalho do perfil -->
+      <div class="stack text-center">
+        <div class="placeholder" style="height:72px;width:72px;margin:0 auto;border-radius:var(--raio-pill)">Foto</div>
+        <div>
+          <h2 class="section__title">Ana Ribeiro</h2>
+          <p class="text-muted">ana@email.com · Editor</p>
+        </div>
+        <button class="button button--secondary button--small">Editar informações</button>
+      </div>
+
+      <!-- Atalho para área administrativa -->
+      <a href="tela_05_admin_categorias.html" class="button button--primary button--block">Área administrativa</a>
+
+      <!-- Minhas postagens com diferentes estados (variações de badge) -->
+      <section class="section">
+        <div class="section__header"><h2 class="section__title">Minhas postagens</h2></div>
+        <ul class="list list--divided">
+          <li class="list__item">
+            <div class="list__item-header">
+              <span class="list__item-title">Sintetizadores modulares em 2026</span>
+              <span class="badge badge--published">Publicado</span>
+            </div>
+            <span class="list__item-meta">Techno · 10 mar</span>
+          </li>
+          <li class="list__item">
+            <div class="list__item-header">
+              <span class="list__item-title">Guia de festivais 2026</span>
+              <span class="badge badge--review">Em análise</span>
+            </div>
+            <span class="list__item-meta">Techno · enviado há 2h</span>
+          </li>
+          <li class="list__item">
+            <div class="list__item-header">
+              <span class="list__item-title">Rascunho sobre áudio digital</span>
+              <span class="badge badge--draft">Rascunho</span>
+            </div>
+            <span class="list__item-meta">sem categoria · não publicado</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Meus comentários -->
+      <section class="section">
+        <div class="section__header"><h2 class="section__title">Meus comentários</h2></div>
+        <ul class="list list--divided">
+          <li class="list__item">
+            <p>"Excelente resumo, ajudou muito!"</p>
+            <span class="list__item-meta">em "CSS moderno" · 09 mar</span>
+          </li>
+          <li class="list__item">
+            <p>"Aguardando aprovação da moderação."</p>
+            <span class="list__item-meta"><span class="badge badge--pending">Pendente</span></span>
+          </li>
+        </ul>
+      </section>
+
+    </div>
+
+    <nav class="nav">
+      <a href="tela_01_home.html" class="nav__item"><span class="nav__icon">⌂</span><span class="nav__label">Início</span></a>
+      <a href="tela_03_destaques.html" class="nav__item"><span class="nav__icon">★</span><span class="nav__label">Destaques</span></a>
+      <a href="tela_11_busca.html" class="nav__item"><span class="nav__icon">🔍</span><span class="nav__label">Buscar</span></a>
+      <a href="tela_14_perfil.html" class="nav__item nav__item--active"><span class="nav__icon">◔</span><span class="nav__label">Perfil</span></a>
+    </nav>
+
+  </main>
+</body>
+</html>

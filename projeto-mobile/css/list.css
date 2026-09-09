@@ -1,0 +1,58 @@
+/* ==========================================================================
+   list.css  —  Bloco: list (Responsabilidade: listagens administrativas)
+   --------------------------------------------------------------------------
+   Substitui as "tabelas" do desktop por uma lista vertical adequada ao mobile.
+   Cada item reúne informação principal, metadados, estado e ações.
+   Usada em: Categorias, Usuários, Fila de revisão, Fila de comentários.
+   ========================================================================== */
+
+/* Bloco */
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--esp-3);
+}
+
+/* Elemento — item da lista (cartão de registro) */
+.list__item {
+  background: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-md);
+  padding: var(--esp-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--esp-2);
+}
+
+.list__item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--esp-2);
+}
+
+.list__item-title {
+  font-size: var(--texto-md);
+  font-weight: 600;
+}
+
+.list__item-meta {
+  font-size: var(--texto-xs);
+  color: var(--cor-texto-suave);
+}
+
+.list__item-actions {
+  display: flex;
+  gap: var(--esp-2);
+  flex-wrap: wrap;
+}
+
+/* Modificador — lista simples com divisórias (sem cartão) */
+.list--divided .list__item {
+  border: none;
+  border-bottom: 1px solid var(--cor-borda);
+  border-radius: 0;
+  background: transparent;
+  padding: var(--esp-3) 0;
+}

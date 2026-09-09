@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tela_07 — Admin: Escolhas do Editor</title>
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+  <main class="screen">
+
+    <header class="header header--admin">
+      <a href="tela_05_admin_categorias.html" class="header__back" style="color:#fff">‹</a>
+      <span class="header__title">Admin · Escolhas do editor</span>
+    </header>
+
+    <nav class="nav nav--side">
+      <a href="tela_05_admin_categorias.html" class="nav__item">Categorias</a>
+      <a href="tela_06_criar_post.html" class="nav__item">Criar post</a>
+      <a href="tela_07_admin_escolhas.html" class="nav__item nav__item--active">Escolhas</a>
+      <a href="tela_08_admin_usuarios.html" class="nav__item">Usuários</a>
+      <a href="tela_09_fila_revisao.html" class="nav__item">Revisão</a>
+      <a href="tela_10_fila_comentarios.html" class="nav__item">Comentários</a>
+    </nav>
+
+    <div class="screen__body">
+
+      <div class="alert alert--info">
+        <div class="alert__title">Escolhas do editor</div>
+        Selecione até 5 postagens para destacar na página inicial.
+      </div>
+
+      <div class="search search--field"><span class="search__icon">🔍</span> Localizar postagem</div>
+
+      <!-- Lista de postagens com seleção de destaque -->
+      <ul class="list">
+        <li class="list__item">
+          <div class="list__item-header">
+            <span class="list__item-title">Modelos generativos no dia a dia</span>
+            <span class="badge badge--published">Destaque</span>
+          </div>
+          <span class="list__item-meta">IA · publicado em 11 mar</span>
+          <div class="list__item-actions">
+            <button class="button button--danger button--small">Remover destaque</button>
+          </div>
+        </li>
+        <li class="list__item">
+          <div class="list__item-header">
+            <span class="list__item-title">CSS moderno que você deveria usar</span>
+            <span class="list__item-meta">Front-end</span>
+          </div>
+          <div class="list__item-actions">
+            <button class="button button--primary button--small">Destacar</button>
+          </div>
+        </li>
+        <li class="list__item">
+          <div class="list__item-header">
+            <span class="list__item-title">Acessibilidade em telas mobile</span>
+            <span class="list__item-meta">Design</span>
+          </div>
+          <div class="list__item-actions">
+            <button class="button button--primary button--small">Destacar</button>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+  </main>
+</body>
+</html>

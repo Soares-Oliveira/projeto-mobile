@@ -1,0 +1,56 @@
+/* ==========================================================================
+   variables.css  —  Design Tokens (Responsabilidade: variáveis globais)
+   --------------------------------------------------------------------------
+   Centraliza cores, espaçamentos, tipografia e raios de borda usados por
+   todos os componentes. Baixa fidelidade: paleta em tons de cinza + 1 acento.
+   ========================================================================== */
+
+:root {
+  /* Cores — wireframe em escala de cinza + acento */
+  --cor-fundo: #eceef1;
+  --cor-superficie: #ffffff;
+  --cor-superficie-alt: #f4f5f7;
+  --cor-borda: #d5d9e0;
+  --cor-borda-forte: #b7bec9;
+
+  --cor-texto: #2b2f36;
+  --cor-texto-suave: #6b7280;
+  --cor-texto-inverso: #ffffff;
+
+  --cor-acento: #3f5bd9;
+  --cor-acento-suave: #dfe4fb;
+
+  /* Estados / status (usados em badges) */
+  --cor-rascunho: #9aa1ac;
+  --cor-publicado: #2e9e6b;
+  --cor-analise: #d99a26;
+  --cor-perigo: #cf4b4b;
+
+  /* Espaçamentos (escala de 4px) */
+  --esp-1: 4px;
+  --esp-2: 8px;
+  --esp-3: 12px;
+  --esp-4: 16px;
+  --esp-5: 24px;
+  --esp-6: 32px;
+
+  /* Tipografia */
+  --fonte-base: "Segoe UI", Roboto, system-ui, -apple-system, sans-serif;
+  --texto-xs: 11px;
+  --texto-sm: 13px;
+  --texto-md: 15px;
+  --texto-lg: 18px;
+  --texto-xl: 22px;
+
+  /* Bordas e sombras */
+  --raio-sm: 6px;
+  --raio-md: 10px;
+  --raio-lg: 16px;
+  --raio-pill: 999px;
+  --sombra: 0 1px 3px rgba(0, 0, 0, 0.08);
+
+  /* Layout mobile */
+  --largura-tela: 390px;
+  --altura-header: 56px;
+  --altura-nav: 60px;
+}

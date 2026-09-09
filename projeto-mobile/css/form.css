@@ -1,0 +1,94 @@
+/* ==========================================================================
+   form.css  —  Bloco: form (Responsabilidade: formulários e campos)
+   --------------------------------------------------------------------------
+   Estrutura de formulário reutilizada em Login, Cadastro, Newsletter e Criar
+   Post. O campo individual (form__group) concentra label, input e ajuda.
+   Variações de contexto: --login, --signup, --newsletter.
+   ========================================================================== */
+
+/* Bloco */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--esp-4);
+}
+
+/* Elementos */
+.form__group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--esp-2);
+}
+
+.form__label {
+  font-size: var(--texto-sm);
+  font-weight: 600;
+  color: var(--cor-texto);
+}
+
+.form__input,
+.form__textarea,
+.form__select {
+  width: 100%;
+  border: 1px solid var(--cor-borda-forte);
+  border-radius: var(--raio-sm);
+  padding: var(--esp-3);
+  font-family: inherit;
+  font-size: var(--texto-md);
+  background: var(--cor-superficie);
+  color: var(--cor-texto);
+}
+
+.form__textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form__input::placeholder,
+.form__textarea::placeholder { color: var(--cor-texto-suave); }
+
+.form__hint {
+  font-size: var(--texto-xs);
+  color: var(--cor-texto-suave);
+}
+
+/* Campo de concordância (checkbox + texto) */
+.form__check {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--esp-2);
+  font-size: var(--texto-sm);
+  color: var(--cor-texto-suave);
+}
+.form__check input { margin-top: 3px; }
+
+/* Área de ações do formulário */
+.form__actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--esp-2);
+}
+
+/* Divisor "ou" para formas alternativas de acesso */
+.form__divider {
+  text-align: center;
+  font-size: var(--texto-xs);
+  color: var(--cor-texto-suave);
+  position: relative;
+}
+.form__divider::before,
+.form__divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background: var(--cor-borda);
+}
+.form__divider::before { left: 0; }
+.form__divider::after { right: 0; }
+
+/* Modificadores de contexto */
+.form--login,
+.form--signup,
+.form--newsletter { max-width: 100%; }
