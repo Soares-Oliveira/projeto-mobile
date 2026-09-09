@@ -1,0 +1,87 @@
+/* ==========================================================================
+   navigation.css  —  Bloco: nav (Responsabilidade: navegação)
+   --------------------------------------------------------------------------
+   Barra de navegação inferior (público) e navegação lateral (--side, admin).
+   Variações de item: --active para indicar a seção atual.
+   ========================================================================== */
+
+/* Bloco — barra inferior fixa dentro da moldura */
+.nav {
+  height: var(--altura-nav);
+  min-height: var(--altura-nav);
+  background: var(--cor-superficie);
+  border-top: 1px solid var(--cor-borda);
+  display: flex;
+  align-items: stretch;
+}
+
+/* Elementos */
+.nav__item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  text-decoration: none;
+  color: var(--cor-texto-suave);
+  font-size: var(--texto-xs);
+}
+
+.nav__icon {
+  font-size: var(--texto-lg);
+  line-height: 1;
+}
+
+.nav__label {
+  font-size: 10px;
+}
+
+/* Modificador — item ativo */
+.nav__item--active {
+  color: var(--cor-acento);
+  font-weight: 600;
+}
+
+/* Modificador de bloco — navegação lateral (admin) em formato de menu horizontal rolável */
+.nav--side {
+  height: auto;
+  min-height: auto;
+  border-top: none;
+  border-bottom: 1px solid var(--cor-borda);
+  overflow-x: auto;
+  gap: var(--esp-2);
+  padding: var(--esp-2) var(--esp-3);
+}
+.nav--side .nav__item {
+  flex: 0 0 auto;
+  flex-direction: row;
+  gap: var(--esp-1);
+  padding: var(--esp-2) var(--esp-3);
+  border-radius: var(--raio-pill);
+  background: var(--cor-superficie-alt);
+  font-size: var(--texto-sm);
+  white-space: nowrap;
+}
+.nav--side .nav__item--active {
+  background: var(--cor-acento-suave);
+  color: var(--cor-acento);
+}
+
+/* Menu principal (lista de links: Destaques, Assinar, Entrar...) */
+.menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.menu__item {
+  padding: var(--esp-3) var(--esp-1);
+  border-bottom: 1px solid var(--cor-borda);
+  color: var(--cor-texto);
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--texto-md);
+}
+.menu__item:last-child { border-bottom: none; }

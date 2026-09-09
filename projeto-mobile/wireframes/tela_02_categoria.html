@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tela_02 — Categoria</title>
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+  <main class="screen">
+
+    <header class="header">
+      <a href="tela_01_home.html" class="header__back">‹</a>
+      <span class="header__title">Categoria: Techno</span>
+      <div class="header__actions"><span class="header__icon">🔍</span></div>
+    </header>
+
+    <div class="screen__body">
+
+      <!-- Filtros (tags) -->
+      <div class="tag-list tag-list--scroll">
+        <a href="#" class="tag tag--selected">Recentes</a>
+        <a href="#" class="tag">Populares</a>
+        <a href="#" class="tag">Comentados</a>
+      </div>
+
+      <!-- Lista de postagens em cards (variação padrão) -->
+      <div class="card-grid">
+        <article class="card">
+          <div class="card__image placeholder">Imagem</div>
+          <div class="card__body">
+            <span class="card__category">Techno</span>
+            <h3 class="card__title">Sintetizadores modulares em 2026</h3>
+            <p class="card__excerpt">Um panorama dos equipamentos que estão moldando a cena.</p>
+            <div class="card__meta"><span>Ana R.</span><span class="card__date">10 mar</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__image placeholder">Imagem</div>
+          <div class="card__body">
+            <span class="card__category">Techno</span>
+            <h3 class="card__title">Do vinil ao streaming ao vivo</h3>
+            <p class="card__excerpt">Como os DJs adaptaram seus sets à era digital.</p>
+            <div class="card__meta"><span>Bruno L.</span><span class="card__date">07 mar</span></div>
+          </div>
+        </article>
+        <article class="card card--compact">
+          <div class="card__image placeholder">Img</div>
+          <div class="card__body">
+            <span class="card__category">Techno</span>
+            <h3 class="card__title">Guia de festivais</h3>
+            <div class="card__meta"><span class="card__date">02 mar</span></div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Carregar mais conteúdos (button secondary) -->
+      <button class="button button--secondary button--block">Carregar mais</button>
+
+    </div>
+
+    <nav class="nav">
+      <a href="tela_01_home.html" class="nav__item"><span class="nav__icon">⌂</span><span class="nav__label">Início</span></a>
+      <a href="tela_03_destaques.html" class="nav__item"><span class="nav__icon">★</span><span class="nav__label">Destaques</span></a>
+      <a href="tela_11_busca.html" class="nav__item"><span class="nav__icon">🔍</span><span class="nav__label">Buscar</span></a>
+      <a href="tela_12_login.html" class="nav__item"><span class="nav__icon">◔</span><span class="nav__label">Entrar</span></a>
+    </nav>
+
+  </main>
+</body>
+</html>

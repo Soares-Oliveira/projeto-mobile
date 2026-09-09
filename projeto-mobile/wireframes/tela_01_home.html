@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tela_01 — Home</title>
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+  <main class="screen">
+
+    <!-- Bloco: header (variação padrão) -->
+    <header class="header">
+      <span class="header__brand">BlogMob</span>
+      <div class="search search--in-header"><span class="search__icon">🔍</span> Buscar postagens</div>
+      <div class="header__actions">
+        <span class="header__icon">☰</span>
+      </div>
+    </header>
+
+    <div class="screen__body">
+
+      <!-- Seção: categorias populares (tags horizontais) -->
+      <section class="section">
+        <div class="section__header">
+          <h2 class="section__title">Categorias populares</h2>
+        </div>
+        <div class="tag-list tag-list--scroll">
+          <a href="tela_02_categoria.html" class="tag tag--selected">Techno</a>
+          <a href="tela_02_categoria.html" class="tag">Design</a>
+          <a href="tela_02_categoria.html" class="tag">Carreira</a>
+          <a href="tela_02_categoria.html" class="tag">Front-end</a>
+          <a href="tela_02_categoria.html" class="tag">IA</a>
+        </div>
+      </section>
+
+      <!-- Seção: em destaque (card featured) -->
+      <section class="section">
+        <div class="section__header">
+          <h2 class="section__title">Em destaque</h2>
+          <a href="tela_03_destaques.html" class="section__action">Ver todos</a>
+        </div>
+        <article class="card card--featured">
+          <div class="card__image placeholder">Imagem</div>
+          <div class="card__body">
+            <span class="card__category">Techno</span>
+            <h3 class="card__title">O futuro dos ritmos eletrônicos</h3>
+            <div class="card__meta"><span>Redação</span><span class="card__date">12 mar</span></div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Seção: escolhas do editor (cards compactos) -->
+      <section class="section">
+        <div class="section__header">
+          <h2 class="section__title">Escolhas do editor</h2>
+        </div>
+        <div class="card-grid">
+          <article class="card card--compact">
+            <div class="card__image placeholder">Img</div>
+            <div class="card__body">
+              <span class="card__category">Design</span>
+              <h3 class="card__title">Princípios de UI para mobile</h3>
+              <div class="card__meta"><span>Editor</span><span class="card__date">08 mar</span></div>
+            </div>
+          </article>
+          <article class="card card--compact">
+            <div class="card__image placeholder">Img</div>
+            <div class="card__body">
+              <span class="card__category">Carreira</span>
+              <h3 class="card__title">Como montar seu portfólio</h3>
+              <div class="card__meta"><span>Editor</span><span class="card__date">05 mar</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Chamada para newsletter (button primary) -->
+      <a href="tela_04_newsletter.html" class="button button--primary button--block">
+        Assinar a newsletter
+      </a>
+
+    </div>
+
+    <!-- Bloco: nav (barra inferior) -->
+    <nav class="nav">
+      <a href="tela_01_home.html" class="nav__item nav__item--active">
+        <span class="nav__icon">⌂</span><span class="nav__label">Início</span>
+      </a>
+      <a href="tela_03_destaques.html" class="nav__item">
+        <span class="nav__icon">★</span><span class="nav__label">Destaques</span>
+      </a>
+      <a href="tela_11_busca.html" class="nav__item">
+        <span class="nav__icon">🔍</span><span class="nav__label">Buscar</span>
+      </a>
+      <a href="tela_12_login.html" class="nav__item">
+        <span class="nav__icon">◔</span><span class="nav__label">Entrar</span>
+      </a>
+    </nav>
+
+  </main>
+</body>
+</html>

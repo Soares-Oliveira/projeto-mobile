@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tela_12 — Login</title>
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+  <main class="screen">
+
+    <header class="header">
+      <a href="tela_01_home.html" class="header__back">‹</a>
+      <span class="header__title">Entrar</span>
+    </header>
+
+    <div class="screen__body">
+
+      <div class="text-center">
+        <div class="placeholder" style="height:80px;width:80px;margin:0 auto;border-radius:var(--raio-pill)">Logo</div>
+        <h2 class="section__title" style="margin-top:var(--esp-3)">Bem-vindo de volta</h2>
+      </div>
+
+      <!-- Bloco: form (variação login) -->
+      <form class="form form--login">
+        <div class="form__group">
+          <label class="form__label" for="email">E-mail</label>
+          <input class="form__input" id="email" type="email" placeholder="voce@email.com">
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="senha">Senha</label>
+          <input class="form__input" id="senha" type="password" placeholder="••••••••">
+          <span class="form__hint">Esqueceu a senha?</span>
+        </div>
+
+        <div class="form__actions">
+          <button class="button button--primary button--block">Entrar</button>
+        </div>
+
+        <div class="form__divider">ou</div>
+
+        <div class="form__actions">
+          <button class="button button--secondary button--block">Continuar com Google</button>
+        </div>
+      </form>
+
+      <p class="text-center text-muted">
+        Não tem conta? <a href="tela_13_cadastro.html" class="section__action">Criar conta</a>
+      </p>
+
+    </div>
+  </main>
+</body>
+</html>

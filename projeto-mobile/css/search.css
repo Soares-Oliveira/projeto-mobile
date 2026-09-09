@@ -1,0 +1,33 @@
+/* ==========================================================================
+   search.css  —  Bloco: search (Responsabilidade: campo de busca)
+   --------------------------------------------------------------------------
+   Elemento recorrente citado nos wireframes (cabeçalho público e telas
+   administrativas). Variações:
+     --in-header  -> ocupa o espaço disponível dentro do header (pill)
+     --field      -> campo em bloco dentro do corpo (cantos suaves)
+   ========================================================================== */
+
+/* Bloco */
+.search {
+  display: flex;
+  align-items: center;
+  gap: var(--esp-2);
+  height: 38px;
+  padding: 0 var(--esp-3);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-pill);
+  background: var(--cor-superficie-alt);
+  color: var(--cor-texto-suave);
+  font-size: var(--texto-sm);
+}
+
+/* Elemento */
+.search__icon { font-size: var(--texto-sm); }
+
+/* Modificadores */
+.search--in-header { flex: 1; }
+
+.search--field {
+  width: 100%;
+  border-radius: var(--raio-sm);
+}

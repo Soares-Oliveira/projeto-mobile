@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tela_05 — Admin: Categorias</title>
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+  <main class="screen">
+
+    <!-- Bloco: header (variação admin) -->
+    <header class="header header--admin">
+      <a href="tela_14_perfil.html" class="header__back" style="color:#fff">‹</a>
+      <span class="header__title">Admin · Categorias</span>
+      <div class="header__actions"><span class="header__icon">◔</span></div>
+    </header>
+
+    <!-- Bloco: nav (variação lateral, rolável) -->
+    <nav class="nav nav--side">
+      <a href="tela_05_admin_categorias.html" class="nav__item nav__item--active">Categorias</a>
+      <a href="tela_06_criar_post.html" class="nav__item">Criar post</a>
+      <a href="tela_07_admin_escolhas.html" class="nav__item">Escolhas</a>
+      <a href="tela_08_admin_usuarios.html" class="nav__item">Usuários</a>
+      <a href="tela_09_fila_revisao.html" class="nav__item">Revisão</a>
+      <a href="tela_10_fila_comentarios.html" class="nav__item">Comentários</a>
+    </nav>
+
+    <div class="screen__body">
+
+      <!-- Indicadores gerais -->
+      <div class="stats">
+        <div class="stat"><div class="stat__value">12</div><div class="stat__label">Categorias</div></div>
+        <div class="stat"><div class="stat__value">148</div><div class="stat__label">Postagens</div></div>
+        <div class="stat"><div class="stat__value">5</div><div class="stat__label">Sem uso</div></div>
+      </div>
+
+      <!-- Busca + ação -->
+      <div class="search search--field"><span class="search__icon">🔍</span> Localizar categoria</div>
+      <button class="button button--primary button--block">+ Nova categoria</button>
+
+      <!-- Lista de registros com ações -->
+      <ul class="list">
+        <li class="list__item">
+          <div class="list__item-header">
+            <span class="list__item-title">Techno</span>
+            <span class="list__item-meta">34 posts</span>
+          </div>
+          <div class="list__item-actions">
+            <button class="button button--secondary button--small">Editar</button>
+            <button class="button button--danger button--small">Excluir</button>
+          </div>
+        </li>
+        <li class="list__item">
+          <div class="list__item-header">
+            <span class="list__item-title">Design</span>
+            <span class="list__item-meta">27 posts</span>
+          </div>
+          <div class="list__item-actions">
+            <button class="button button--secondary button--small">Editar</button>
+            <button class="button button--danger button--small">Excluir</button>
+          </div>
+        </li>
+        <li class="list__item">
+          <div class="list__item-header">
+            <span class="list__item-title">Carreira</span>
+            <span class="list__item-meta">19 posts</span>
+          </div>
+          <div class="list__item-actions">
+            <button class="button button--secondary button--small">Editar</button>
+            <button class="button button--danger button--small">Excluir</button>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+  </main>
+</body>
+</html>

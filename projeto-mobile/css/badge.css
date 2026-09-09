@@ -1,0 +1,41 @@
+/* ==========================================================================
+   badge.css  —  Bloco: badge (Responsabilidade: indicadores de estado)
+   --------------------------------------------------------------------------
+   Selo curto que comunica o estado de um conteúdo ou registro.
+   Variações identificadas nos wireframes:
+     --draft      -> Rascunho
+     --published  -> Publicado
+     --review     -> Em análise
+     --pending    -> Pendente (moderação)
+     --blocked    -> Bloqueado (usuário)
+   ========================================================================== */
+
+/* Bloco */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--esp-1);
+  font-size: var(--texto-xs);
+  font-weight: 600;
+  padding: 2px var(--esp-2);
+  border-radius: var(--raio-pill);
+  background: var(--cor-superficie-alt);
+  color: var(--cor-texto-suave);
+  border: 1px solid var(--cor-borda);
+  white-space: nowrap;
+}
+
+.badge::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+/* Modificadores */
+.badge--draft { color: var(--cor-rascunho); }
+.badge--published { color: var(--cor-publicado); }
+.badge--review { color: var(--cor-analise); }
+.badge--pending { color: var(--cor-analise); }
+.badge--blocked { color: var(--cor-perigo); }

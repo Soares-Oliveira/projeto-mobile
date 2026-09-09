@@ -1,0 +1,29 @@
+/* ==========================================================================
+   main.css  —  Ponto de entrada dos estilos
+   --------------------------------------------------------------------------
+   Reúne, na ordem correta, os arquivos organizados por responsabilidade (SRP).
+   Cada @import corresponde a um bloco/responsabilidade da interface.
+   As telas (wireframes) carregam apenas este arquivo.
+   ========================================================================== */
+
+/* 1. Fundação */
+@import "variables.css";
+@import "base.css";
+
+/* 2. Estrutura / navegação */
+@import "header.css";
+@import "navigation.css";
+@import "search.css";
+@import "section.css";
+
+/* 3. Componentes de conteúdo */
+@import "card.css";
+@import "button.css";
+@import "form.css";
+@import "list.css";
+
+/* 4. Elementos de apoio */
+@import "badge.css";
+@import "tag.css";
+@import "stats.css";
+@import "alert.css";

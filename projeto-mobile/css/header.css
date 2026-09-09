@@ -1,0 +1,71 @@
+/* ==========================================================================
+   header.css  —  Bloco: header (Responsabilidade: cabeçalho da aplicação)
+   --------------------------------------------------------------------------
+   Componente recorrente no topo das telas. Reúne título/marca, busca e ícones.
+   Variações: padrão (público) e --admin (área administrativa).
+   ========================================================================== */
+
+/* Bloco */
+.header {
+  height: var(--altura-header);
+  min-height: var(--altura-header);
+  background: var(--cor-superficie);
+  border-bottom: 1px solid var(--cor-borda);
+  display: flex;
+  align-items: center;
+  gap: var(--esp-3);
+  padding: 0 var(--esp-4);
+}
+
+/* Elementos */
+.header__back {
+  font-size: var(--texto-lg);
+  color: var(--cor-texto);
+  text-decoration: none;
+  line-height: 1;
+}
+
+.header__brand {
+  font-size: var(--texto-lg);
+  font-weight: 700;
+  color: var(--cor-texto);
+}
+
+.header__title {
+  font-size: var(--texto-md);
+  font-weight: 600;
+  flex: 1;
+}
+
+.header__actions {
+  margin-left: auto;
+  display: flex;
+  gap: var(--esp-3);
+}
+
+.header__icon {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--raio-pill);
+  background: var(--cor-superficie-alt);
+  border: 1px solid var(--cor-borda);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--texto-sm);
+  color: var(--cor-texto-suave);
+}
+
+/* Obs.: o campo de busca é um bloco próprio (search.css) reutilizado aqui. */
+
+/* Modificador */
+.header--admin {
+  background: var(--cor-texto);
+}
+.header--admin .header__brand,
+.header--admin .header__title { color: var(--cor-texto-inverso); }
+.header--admin .header__icon {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: var(--cor-texto-inverso);
+}

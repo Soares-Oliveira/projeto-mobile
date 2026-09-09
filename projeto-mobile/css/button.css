@@ -1,0 +1,71 @@
+/* ==========================================================================
+   button.css  —  Bloco: button (Responsabilidade: ações/botões)
+   --------------------------------------------------------------------------
+   Componente de ação usado em toda a aplicação (login, newsletter, admin...).
+   Variações:
+     --primary    -> ação principal (preenchido)
+     --secondary  -> ação secundária (contorno)
+     --disabled   -> indisponível
+     --danger     -> ação destrutiva (excluir/bloquear)
+     --ghost      -> discreto (links de ação em listas)
+     --block      -> ocupa toda a largura
+     --small      -> versão reduzida (ações em linha)
+   ========================================================================== */
+
+/* Bloco */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--esp-2);
+  border: 1px solid transparent;
+  border-radius: var(--raio-sm);
+  padding: var(--esp-3) var(--esp-4);
+  font-size: var(--texto-md);
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  background: var(--cor-superficie-alt);
+  color: var(--cor-texto);
+}
+
+/* Modificadores */
+.button--primary {
+  background: var(--cor-acento);
+  color: var(--cor-texto-inverso);
+}
+
+.button--secondary {
+  background: transparent;
+  border-color: var(--cor-borda-forte);
+  color: var(--cor-texto);
+}
+
+.button--disabled {
+  background: var(--cor-borda);
+  color: var(--cor-texto-suave);
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.button--danger {
+  background: transparent;
+  border-color: var(--cor-perigo);
+  color: var(--cor-perigo);
+}
+
+.button--ghost {
+  background: transparent;
+  color: var(--cor-acento);
+  padding: var(--esp-2);
+}
+
+.button--block {
+  width: 100%;
+}
+
+.button--small {
+  padding: var(--esp-1) var(--esp-3);
+  font-size: var(--texto-sm);
+}

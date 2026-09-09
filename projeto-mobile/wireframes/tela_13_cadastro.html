@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tela_13 — Cadastro</title>
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+  <main class="screen">
+
+    <header class="header">
+      <a href="tela_12_login.html" class="header__back">‹</a>
+      <span class="header__title">Criar conta</span>
+    </header>
+
+    <div class="screen__body">
+
+      <!-- Bloco: form (variação cadastro) -->
+      <form class="form form--signup">
+        <div class="form__group">
+          <label class="form__label" for="nome">Nome</label>
+          <input class="form__input" id="nome" type="text" placeholder="Seu nome completo">
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="email">E-mail</label>
+          <input class="form__input" id="email" type="email" placeholder="voce@email.com">
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="senha">Senha</label>
+          <input class="form__input" id="senha" type="password" placeholder="••••••••">
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="confirmar">Confirmar senha</label>
+          <input class="form__input" id="confirmar" type="password" placeholder="••••••••">
+        </div>
+
+        <label class="form__check">
+          <input type="checkbox">
+          <span>Li e concordo com os <strong>Termos</strong> e a <strong>Política de Privacidade</strong>.</span>
+        </label>
+
+        <div class="form__actions">
+          <button class="button button--primary button--block">Criar conta</button>
+        </div>
+      </form>
+
+      <p class="text-center text-muted">
+        Já tem conta? <a href="tela_12_login.html" class="section__action">Entrar</a>
+      </p>
+
+    </div>
+  </main>
+</body>
+</html>

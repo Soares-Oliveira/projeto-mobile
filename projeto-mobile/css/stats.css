@@ -1,0 +1,33 @@
+/* ==========================================================================
+   stats.css  —  Bloco: stats (Responsabilidade: indicadores gerais - admin)
+   --------------------------------------------------------------------------
+   Painel de indicadores que aparece no topo das telas administrativas
+   (tela_05 a tela_10): totais e contadores gerais.
+   ========================================================================== */
+
+/* Bloco — grade de indicadores */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--esp-2);
+}
+
+/* Elemento — indicador individual */
+.stat {
+  background: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-md);
+  padding: var(--esp-3);
+  text-align: center;
+}
+
+.stat__value {
+  font-size: var(--texto-xl);
+  font-weight: 700;
+  color: var(--cor-acento);
+}
+
+.stat__label {
+  font-size: var(--texto-xs);
+  color: var(--cor-texto-suave);
+}

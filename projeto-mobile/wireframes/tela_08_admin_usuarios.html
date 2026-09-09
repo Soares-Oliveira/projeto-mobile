@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tela_08 — Admin: Usuários</title>
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+  <main class="screen">
+
+    <header class="header header--admin">
+      <a href="tela_05_admin_categorias.html" class="header__back" style="color:#fff">‹</a>
+      <span class="header__title">Admin · Usuários</span>
+    </header>
+
+    <nav class="nav nav--side">
+      <a href="tela_05_admin_categorias.html" class="nav__item">Categorias</a>
+      <a href="tela_06_criar_post.html" class="nav__item">Criar post</a>
+      <a href="tela_07_admin_escolhas.html" class="nav__item">Escolhas</a>
+      <a href="tela_08_admin_usuarios.html" class="nav__item nav__item--active">Usuários</a>
+      <a href="tela_09_fila_revisao.html" class="nav__item">Revisão</a>
+      <a href="tela_10_fila_comentarios.html" class="nav__item">Comentários</a>
+    </nav>
+
+    <div class="screen__body">
+
+      <div class="stats">
+        <div class="stat"><div class="stat__value">312</div><div class="stat__label">Usuários</div></div>
+        <div class="stat"><div class="stat__value">298</div><div class="stat__label">Ativos</div></div>
+        <div class="stat"><div class="stat__value">14</div><div class="stat__label">Bloqueados</div></div>
+      </div>
+
+      <div class="search search--field"><span class="search__icon">🔍</span> Localizar usuário</div>
+
+      <!-- Lista de contas com estado e ações de acesso -->
+      <ul class="list">
+        <li class="list__item">
+          <div class="list__item-header">
+            <span class="list__item-title">Ana Ribeiro</span>
+            <span class="badge badge--published">Ativo</span>
+          </div>
+          <span class="list__item-meta">ana@email.com · Editor</span>
+          <div class="list__item-actions">
+            <button class="button button--danger button--small">Bloquear</button>
+          </div>
+        </li>
+        <li class="list__item">
+          <div class="list__item-header">
+            <span class="list__item-title">Bruno Lima</span>
+            <span class="badge badge--blocked">Bloqueado</span>
+          </div>
+          <span class="list__item-meta">bruno@email.com · Autor</span>
+          <div class="list__item-actions">
+            <button class="button button--secondary button--small">Desbloquear</button>
+          </div>
+        </li>
+        <li class="list__item">
+          <div class="list__item-header">
+            <span class="list__item-title">Carla Mota</span>
+            <span class="badge badge--published">Ativo</span>
+          </div>
+          <span class="list__item-meta">carla@email.com · Leitor</span>
+          <div class="list__item-actions">
+            <button class="button button--danger button--small">Bloquear</button>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+  </main>
+</body>
+</html>

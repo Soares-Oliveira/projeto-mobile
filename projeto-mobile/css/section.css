@@ -1,0 +1,39 @@
+/* ==========================================================================
+   section.css  —  Bloco: section (Responsabilidade: agrupar conteúdo)
+   --------------------------------------------------------------------------
+   Cabeçalho de seção recorrente ("Categorias populares", "Em destaque",
+   "Escolhas do editor") com título e ação opcional ("ver todos").
+   ========================================================================== */
+
+/* Bloco */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--esp-3);
+}
+
+/* Elementos */
+.section__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.section__title {
+  font-size: var(--texto-lg);
+  font-weight: 700;
+}
+
+.section__action {
+  font-size: var(--texto-sm);
+  color: var(--cor-acento);
+  text-decoration: none;
+}
+
+/* Grade horizontal com rolagem (carrossel de baixa fidelidade) */
+.section__scroller {
+  display: flex;
+  gap: var(--esp-3);
+  overflow-x: auto;
+  padding-bottom: var(--esp-1);
+}

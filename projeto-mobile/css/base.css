@@ -1,0 +1,78 @@
+/* ==========================================================================
+   base.css  —  Reset + Moldura Mobile (Responsabilidade: base do layout)
+   --------------------------------------------------------------------------
+   Reset mínimo, tipografia base e a "moldura" que simula a tela do celular.
+   Não é um componente BEM; é a fundação sobre a qual os blocos se apoiam.
+   ========================================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fonte-base);
+  font-size: var(--texto-md);
+  color: var(--cor-texto);
+  background: var(--cor-fundo);
+  line-height: 1.4;
+  display: flex;
+  justify-content: center;
+  padding: var(--esp-5) 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Bloco "screen" — representa o dispositivo mobile em baixa fidelidade */
+.screen {
+  width: 100%;
+  max-width: var(--largura-tela);
+  min-height: 780px;
+  background: var(--cor-superficie-alt);
+  border: 1px solid var(--cor-borda-forte);
+  border-radius: var(--raio-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.screen__body {
+  flex: 1;
+  padding: var(--esp-4);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--esp-4);
+}
+
+/* Placeholder de imagem (baixa fidelidade) */
+.placeholder {
+  background: repeating-linear-gradient(
+    45deg,
+    var(--cor-superficie-alt),
+    var(--cor-superficie-alt) 8px,
+    var(--cor-borda) 8px,
+    var(--cor-borda) 9px
+  );
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cor-texto-suave);
+  font-size: var(--texto-xs);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  min-height: 100px;
+}
+
+/* Utilitários simples */
+.text-muted { color: var(--cor-texto-suave); }
+.text-center { text-align: center; }
+.stack { display: flex; flex-direction: column; gap: var(--esp-3); }
