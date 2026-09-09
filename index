@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protótipo Mobile — Índice de Telas</title>
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    /* Estilos exclusivos da página de índice (não fazem parte dos componentes) */
+    body { display: block; padding: 0; background: var(--cor-fundo); }
+    .home { max-width: 960px; margin: 0 auto; padding: var(--esp-5) var(--esp-4); }
+    .home__title { font-size: var(--texto-xl); margin-bottom: var(--esp-1); }
+    .home__sub { color: var(--cor-texto-suave); margin-bottom: var(--esp-5); }
+    .flow { margin-bottom: var(--esp-6); }
+    .flow__title {
+      font-size: var(--texto-lg); font-weight: 700; margin-bottom: var(--esp-1);
+      display: flex; align-items: center; gap: var(--esp-2);
+    }
+    .flow__desc { color: var(--cor-texto-suave); font-size: var(--texto-sm); margin-bottom: var(--esp-3); }
+    .grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: var(--esp-3);
+    }
+    .screen-card {
+      background: var(--cor-superficie); border: 1px solid var(--cor-borda);
+      border-radius: var(--raio-md); padding: var(--esp-3); text-decoration: none;
+      color: var(--cor-texto); display: flex; flex-direction: column; gap: var(--esp-1);
+      box-shadow: var(--sombra); transition: transform .12s ease, border-color .12s ease;
+    }
+    .screen-card:hover { transform: translateY(-2px); border-color: var(--cor-acento); }
+    .screen-card__id { font-size: var(--texto-xs); color: var(--cor-acento); font-weight: 700; letter-spacing: .5px; }
+    .screen-card__name { font-weight: 600; font-size: var(--texto-md); }
+    .screen-card__desc { font-size: var(--texto-xs); color: var(--cor-texto-suave); }
+  </style>
+</head>
+<body>
+  <div class="home">
+    <h1 class="home__title">Protótipo Mobile — BlogMob</h1>
+    <p class="home__sub">14 telas em baixa fidelidade · CSS organizado com BEM · toque em uma tela para abrir.</p>
+
+    <!-- Fluxo público -->
+    <section class="flow">
+      <h2 class="flow__title">🌐 Fluxo público</h2>
+      <p class="flow__desc">tela_01 → categorias · destaques · newsletter · busca</p>
+      <div class="grid">
+        <a class="screen-card" href="wireframes/tela_01_home.html"><span class="screen-card__id">TELA_01</span><span class="screen-card__name">Home</span><span class="screen-card__desc">Ponto de entrada</span></a>
+        <a class="screen-card" href="wireframes/tela_02_categoria.html"><span class="screen-card__id">TELA_02</span><span class="screen-card__name">Categoria</span><span class="screen-card__desc">Posts por categoria</span></a>
+        <a class="screen-card" href="wireframes/tela_03_destaques.html"><span class="screen-card__id">TELA_03</span><span class="screen-card__name">Destaques</span><span class="screen-card__desc">Conteúdos em evidência</span></a>
+        <a class="screen-card" href="wireframes/tela_04_newsletter.html"><span class="screen-card__id">TELA_04</span><span class="screen-card__name">Newsletter</span><span class="screen-card__desc">Assinatura por e-mail</span></a>
+        <a class="screen-card" href="wireframes/tela_11_busca.html"><span class="screen-card__id">TELA_11</span><span class="screen-card__name">Busca</span><span class="screen-card__desc">Resultados de pesquisa</span></a>
+      </div>
+    </section>
+
+    <!-- Fluxo de autenticação -->
+    <section class="flow">
+      <h2 class="flow__title">🔐 Fluxo de autenticação</h2>
+      <p class="flow__desc">tela_12 → tela_13 → tela_14</p>
+      <div class="grid">
+        <a class="screen-card" href="wireframes/tela_12_login.html"><span class="screen-card__id">TELA_12</span><span class="screen-card__name">Login</span><span class="screen-card__desc">Autenticação</span></a>
+        <a class="screen-card" href="wireframes/tela_13_cadastro.html"><span class="screen-card__id">TELA_13</span><span class="screen-card__name">Cadastro</span><span class="screen-card__desc">Criar conta</span></a>
+        <a class="screen-card" href="wireframes/tela_14_perfil.html"><span class="screen-card__id">TELA_14</span><span class="screen-card__name">Perfil</span><span class="screen-card__desc">Área do usuário</span></a>
+      </div>
+    </section>
+
+    <!-- Fluxo administrativo -->
+    <section class="flow">
+      <h2 class="flow__title">🛠️ Fluxo administrativo</h2>
+      <p class="flow__desc">tela_05 a tela_10 · produção de conteúdo: tela_06 → tela_09 → publicação</p>
+      <div class="grid">
+        <a class="screen-card" href="wireframes/tela_05_admin_categorias.html"><span class="screen-card__id">TELA_05</span><span class="screen-card__name">Categorias</span><span class="screen-card__desc">Manutenção</span></a>
+        <a class="screen-card" href="wireframes/tela_06_criar_post.html"><span class="screen-card__id">TELA_06</span><span class="screen-card__name">Criar post</span><span class="screen-card__desc">Nova postagem</span></a>
+        <a class="screen-card" href="wireframes/tela_07_admin_escolhas.html"><span class="screen-card__id">TELA_07</span><span class="screen-card__name">Escolhas do editor</span><span class="screen-card__desc">Destaques</span></a>
+        <a class="screen-card" href="wireframes/tela_08_admin_usuarios.html"><span class="screen-card__id">TELA_08</span><span class="screen-card__name">Usuários</span><span class="screen-card__desc">Controle de acesso</span></a>
+        <a class="screen-card" href="wireframes/tela_09_fila_revisao.html"><span class="screen-card__id">TELA_09</span><span class="screen-card__name">Fila de revisão</span><span class="screen-card__desc">Aprovar/reprovar</span></a>
+        <a class="screen-card" href="wireframes/tela_10_fila_comentarios.html"><span class="screen-card__id">TELA_10</span><span class="screen-card__name">Comentários</span><span class="screen-card__desc">Moderação</span></a>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
